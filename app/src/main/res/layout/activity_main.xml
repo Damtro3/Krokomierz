@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:indeterminate="false"
+            android:foregroundGravity="center"
+            android:progressDrawable="@drawable/circle_progressbar"
+            android:background="@drawable/circle_shape_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="10000"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_running"
+            android:foregroundGravity="center"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stepsCount"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/tekstSzary"
+            android:textSize="25dp"
+
+            />
+
+        <TextView
+            android:id="@+id/steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="/ 10000 kroków"
+            android:layout_gravity="center"
+            android:textColor="@color/tekst"
+            android:gravity="center"
+            android:textSize="20dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

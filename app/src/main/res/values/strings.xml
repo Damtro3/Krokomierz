@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Krokomierz</string>
+    <string name="stepsCount">Liczba kroków</string>
+</resources>
